@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre mí — Araneda Office</title>
+<meta name="description" content="Juan Araneda, fundador de Araneda Office. Certificaciones de Anthropic Academy en AI Fluency y Claude Cowork.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .cert-grid{margin-top:70px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .cert-card{border:1px solid var(--hair);padding:0;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:border-color .5s var(--ease),background .5s var(--ease);}
+  .cert-card:hover{border-color:rgba(255,255,255,.14);background:rgba(var(--ac-rgb),.03);}
+  .cert-card img{width:100%;display:block;border-bottom:1px solid var(--hair);}
+  .cert-card-body{padding:20px 20px 24px;}
+  .cert-card h4{font-family:var(--serif);font-weight:500;font-size:17px;line-height:1.3;margin-bottom:6px;}
+  .cert-card p{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin:0;}
+  @media (max-width:768px){ .cert-grid{grid-template-columns:1fr 1fr;gap:12px;} }
+  @media (max-width:420px){ .cert-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<div id="root">
+
+<a class="wa-float" href="https://wa.me/56984388246" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp" data-ripple="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.98.573 3.827 1.562 5.383L2 22l4.735-1.53A9.953 9.953 0 0 0 12.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.2c-1.767 0-3.407-.52-4.79-1.415l-.343-.212-2.808.907.918-2.735-.223-.354A8.174 8.174 0 0 1 3.8 12c0-4.522 3.678-8.2 8.201-8.2 4.522 0 8.199 3.678 8.199 8.2 0 4.523-3.677 8.2-8.199 8.2z"/></svg></a>
+
+<nav class="nv5">
+  <div class="ctn nv5-in">
+    <a href="index.html" class="nv5-logo" style="text-decoration:none;">
+      <span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="color:var(--ac)"><circle cx="12" cy="12" r="2.5" opacity="0.9"></circle><circle cx="12" cy="12" r="6.5" opacity="0.4"></circle><circle cx="12" cy="12" r="10.5" opacity="0.18"></circle></svg></span>
+      <span class="w1">Araneda</span><span class="w2">Office</span>
+    </a>
+    <div class="nv5-lnk">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Sobre mí</a>
+    </div>
+    <div class="nv5-right">
+      <div class="nv5-social">
+        <a href="https://www.instagram.com/juandelagua.ia/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="3.7"></circle><circle cx="17.2" cy="6.8" r="1.05" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.linkedin.com/in/juan-araneda-979a2236a/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 7.01a1.96 1.96 0 1 0 0-3.92 1.96 1.96 0 0 0 0 3.92ZM20.44 20H17.06V14.02c0-1.42-.03-3.25-1.98-3.25-1.99 0-2.3 1.55-2.3 3.15V20H9.4V8.5h3.24v1.57h.05c.45-.85 1.56-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18V20Z"/></svg></a>
+      </div>
+    </div>
+    <button class="hmb" aria-label="Menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+  </div>
+  <div class="nv5-prog"></div>
+</nav>
+<div class="mob5">
+  <div class="mob5-hd">
+    <a href="index.html" class="nv5-logo" style="text-decoration:none;">
+      <span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="color:var(--ac)"><circle cx="12" cy="12" r="2.5" opacity="0.9"></circle><circle cx="12" cy="12" r="6.5" opacity="0.4"></circle><circle cx="12" cy="12" r="10.5" opacity="0.18"></circle></svg></span>
+      <span class="w1">Araneda</span><span class="w2">Office</span>
+    </a>
+    <button class="hmb hmb-close" style="display:flex;" aria-label="Cerrar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+  </div>
+  <div class="mob5-lnk">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="nosotros.html">Sobre mí</a>
+  </div>
+  <div class="mob5-social">
+    <a href="https://www.instagram.com/juandelagua.ia/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="3.7"></circle><circle cx="17.2" cy="6.8" r="1.05" fill="currentColor" stroke="none"></circle></svg></a>
+    <a href="https://www.linkedin.com/in/juan-araneda-979a2236a/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 7.01a1.96 1.96 0 1 0 0-3.92 1.96 1.96 0 0 0 0 3.92ZM20.44 20H17.06V14.02c0-1.42-.03-3.25-1.98-3.25-1.99 0-2.3 1.55-2.3 3.15V20H9.4V8.5h3.24v1.57h.05c.45-.85 1.56-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18V20Z"/></svg></a>
+    <a href="https://wa.me/56984388246" target="_blank" rel="noopener" aria-label="WhatsApp" class="ico-wa"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.98.573 3.827 1.562 5.383L2 22l4.735-1.53A9.953 9.953 0 0 0 12.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.2c-1.767 0-3.407-.52-4.79-1.415l-.343-.212-2.808.907.918-2.735-.223-.354A8.174 8.174 0 0 1 3.8 12c0-4.522 3.678-8.2 8.201-8.2 4.522 0 8.199 3.678 8.199 8.2 0 4.523-3.677 8.2-8.199 8.2z"/></svg></a>
+  </div>
+</div>
+
+<main>
+
+<section class="sc5" id="sobre-mi" style="padding-top:170px;">
+  <div class="ctn">
+    <div class="sc-hd5">
+      <div class="shd"><span class="shd-num">1</span><span class="shd-line"></span><span class="shd-lb">Sobre mí</span></div>
+      <h2 class="shd-tt">La persona detrás de Araneda Office</h2>
+    </div>
+    <div class="ab5-grid">
+      <div class="ab5-left">
+        <div class="ab5-text">
+          <p class="lead">«Me frustraba ver a gente capaz —profesionales, dueños de negocio— sabiendo que la IA les serviría, pero sin tiempo para aprenderla por su cuenta.»</p>
+          <p>Soy Juan Araneda. Creé Araneda Office para trabajar directamente contigo, sin intermediarios. Estudié la metodología de AI Fluency y Claude Cowork directamente con Anthropic Academy, y hoy me dedico a enseñarla aplicada al trabajo real de cada persona con la que trabajo.</p>
+          <p>Mi enfoque es simple: entender tu trabajo primero, aplicar Claude sobre eso —no sobre un ejemplo genérico—, y dejarte usándolo de verdad. Si algo no funciona para ti, lo ajustamos.</p>
+        </div>
+        <div class="ab5-vals">
+          <div class="ab5-val" data-ripple="true"><h4>Trato directo</h4><p>Trabajas conmigo directamente.</p></div>
+          <div class="ab5-val" data-ripple="true"><h4>A tu medida</h4><p>Cada sesión se ajusta a tu trabajo real, nunca a una plantilla.</p></div>
+          <div class="ab5-val" data-ripple="true"><h4>Sin humo</h4><p>Te digo qué puede y no puede hacer bien la IA, sin exagerar.</p></div>
+        </div>
+      </div>
+      <div class="ab5-photo-wrap">
+        <img src="assets/juan-araneda.png" alt="Juan Araneda" class="ab5-photo">
+        <span class="ab5-photo-name">Juan Araneda</span>
+        <span class="ab5-photo-role">Fundador</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sc5" id="certificaciones">
+  <div class="ctn">
+    <div class="sc-hd5">
+      <div class="shd"><span class="shd-num">2</span><span class="shd-line"></span><span class="shd-lb">Credenciales</span></div>
+      <h2 class="shd-tt">Certificaciones de Anthropic Academy</h2>
+      <p class="shd-ds">La misma empresa que hace Claude — no un curso improvisado. Haz clic en cualquiera para ver el certificado.</p>
+    </div>
+    <div class="cert-grid">
+      <a class="cert-card" data-ripple="true" href="https://verify.skilljar.com/c/yoy4ms4mciyr" target="_blank" rel="noopener">
+        <img src="assets/cert-framework-foundations-1.png" alt="Certificado AI Fluency: Framework & Foundations">
+        <div class="cert-card-body"><h4>AI Fluency: Framework &amp; Foundations</h4><p>Anthropic</p></div>
+      </a>
+      <a class="cert-card" data-ripple="true" href="https://verify.skilljar.com/c/czohpya84mv6" target="_blank" rel="noopener">
+        <img src="assets/cert-small-business-1.png" alt="Certificado AI Fluency for Small Businesses">
+        <div class="cert-card-body"><h4>AI Fluency for Small Businesses</h4><p>Anthropic · PayPal</p></div>
+      </a>
+      <a class="cert-card" data-ripple="true" href="https://verify.skilljar.com/c/eby3swx96amw" target="_blank" rel="noopener">
+        <img src="assets/cert-teaching-framework-1.png" alt="Certificado Teaching the AI Fluency Framework">
+        <div class="cert-card-body"><h4>Teaching the AI Fluency Framework</h4><p>Anthropic</p></div>
+      </a>
+      <a class="cert-card" data-ripple="true" href="https://verify.skilljar.com/c/j3qduh6p6k83" target="_blank" rel="noopener">
+        <img src="assets/cert-claude-cowork-1.png" alt="Certificado Introduction to Claude Cowork">
+        <div class="cert-card-body"><h4>Introduction to Claude Cowork</h4><p>Anthropic</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sc5" id="especializacion">
+  <div class="ctn">
+    <div class="sc-hd5">
+      <div class="shd"><span class="shd-num">3</span><span class="shd-line"></span><span class="shd-lb">Especialización</span></div>
+      <h2 class="shd-tt">No enseño IA en abstracto</h2>
+      <p class="shd-ds">Estoy certificado por Anthropic Academy: estudié directamente con ellos la metodología de AI Fluency y Claude Cowork, y además estoy certificado para enseñarla. En el fondo, lo que enseño es a colaborar con la inteligencia artificial de forma efectiva, eficiente, ética y segura — aplicado a tu trabajo real, no a un ejemplo genérico.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ct5" id="cta">
+  <div class="ctn">
+    <h2>¿Conversamos sobre tu <em>caso</em>?</h2>
+    <p class="ct5-ds">Escríbeme y cuéntame en qué trabajas, sin compromiso.</p>
+    <a href="https://wa.me/56984388246?text=Hola%20Juan%21%20Vi%20tu%20web%20%28Araneda%20Office%29%20y%20quiero%20conversar%20sobre%20c%C3%B3mo%20empezar%20a%20usar%20Claude%20en%20mi%20trabajo." target="_blank" rel="noopener" class="bt bt-p bt-lg" data-ripple="true">Conversemos</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ft5">
+  <div class="ctn">
+    <div class="ft5-grid">
+      <div>
+        <span class="ft5-br">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="color:var(--ac)"><circle cx="12" cy="12" r="2.5" opacity="0.9"></circle><circle cx="12" cy="12" r="6.5" opacity="0.4"></circle><circle cx="12" cy="12" r="10.5" opacity="0.18"></circle></svg>
+          <span class="w1">Araneda</span><span class="w2">Office</span>
+        </span>
+        <p class="ft5-tg">Asesoría personalizada en Claude. Metodología certificada por Anthropic Academy.</p>
+      </div>
+      <div class="ft5-col">
+        <h4>Navegación</h4>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Sobre mí</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="ft5-col">
+        <h4>Programas</h4>
+        <a href="asesoria-claude.html">Asesoría Personalizada Claude</a>
+        <a href="cowork-sb.html">Cowork Claude for Small Business</a>
+      </div>
+      <div class="ft5-col">
+        <h4>Contacto</h4>
+        <a href="mailto:juanaranedagattavara@gmail.com">Email</a>
+        <a href="https://wa.me/56984388246" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/juandelagua.ia/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/in/juan-araneda-979a2236a/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="ft5-btm">
+      <span>© 2026 Araneda Office · Chile</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="water.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
